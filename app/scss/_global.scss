@@ -59,24 +59,33 @@ header {
 
 }
 
+/*
+#################################
+##############################
+Info Container
+###############################
+################################
+*/
+
+
 
 
 .info-container {
     
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     line-height: 0.8;
     gap: 16px;
     align-items: center;
     justify-items: start;
     height: 64px;
-    padding: 5px 30px 20px 30px;
-    margin-bottom: 20px;
+    padding: 0px 30px 15px 30px;
+    
     
 
 
     img {
-        height: 40px;
+        height: 35px;
         border-radius: 100%;
     }
 
@@ -93,6 +102,7 @@ header {
         .name {
             font-weight: 700;
             color: $veryDarkGrayishBlue;
+            margin-right: 32px;
         }
 
     font-weight: 500;
@@ -100,6 +110,15 @@ header {
     }
 
 }
+
+/*
+#################################
+##############################
+Social Container
+###############################
+################################
+*/
+
 
 .social-container {
     display: inline-grid;

@@ -70,9 +70,16 @@ header {
   background-size: 101% 120%;
 }
 
+/*
+#################################
+##############################
+Info Container
+###############################
+################################
+*/
 .info-container {
-  display: -ms-inline-grid;
-  display: inline-grid;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 4fr 1fr;
       grid-template-columns: 1fr 4fr 1fr;
   line-height: 0.8;
@@ -82,12 +89,11 @@ header {
           align-items: center;
   justify-items: start;
   height: 64px;
-  padding: 5px 30px 20px 30px;
-  margin-bottom: 20px;
+  padding: 0px 30px 15px 30px;
 }
 
 .info-container img {
-  height: 40px;
+  height: 35px;
   border-radius: 100%;
 }
 
@@ -107,8 +113,16 @@ header {
 .info-container .text-container .name {
   font-weight: 700;
   color: #48556a;
+  margin-right: 32px;
 }
 
+/*
+#################################
+##############################
+Social Container
+###############################
+################################
+*/
 .social-container {
   display: -ms-inline-grid;
   display: inline-grid;
@@ -149,5 +163,83 @@ header {
 
 .social-container .icon #share {
   fill: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+.open {
+    display: block;
+}
+*/
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 250ms ease-in-out forwards;
+          animation: fade-in 250ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 250ms ease-in-out forwards;
+          animation: fade-out 250ms ease-in-out forwards;
 }
 /*# sourceMappingURL=styles.css.map */
