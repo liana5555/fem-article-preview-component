@@ -1,0 +1,145 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: $lightGrayishBlue;
+
+}
+main {
+    border-radius: 10px;
+    background-color: white;
+    max-width: 330px;
+    text-align: left;
+    overflow: hidden;
+    padding: 0;
+    
+}
+
+.title-text-container {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    h2 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 16px;
+        color: $veryDarkGrayishBlue;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+
+    }
+    p{
+        color: $desaturatedDarkBlue;
+        line-height: 1.5;
+        text-align: left;
+        letter-spacing: 0.3px;
+    }
+}
+
+header {
+    min-height: 200px;
+    background-image: url('/images/drawers.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 101% 120%;
+
+}
+
+
+
+.info-container {
+    
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    line-height: 0.8;
+    gap: 16px;
+    align-items: center;
+    justify-items: start;
+    height: 64px;
+    padding: 5px 30px 20px 30px;
+    margin-bottom: 20px;
+    
+
+
+    img {
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    .icon {
+        justify-self: end;
+        background-color: $lightGrayishBlue;
+        border-radius: 100%;
+        padding: 10px;
+    }
+  
+
+
+    .text-container {
+        .name {
+            font-weight: 700;
+            color: $veryDarkGrayishBlue;
+        }
+
+    font-weight: 500;
+    color: $desaturatedDarkBlue;
+    }
+
+}
+
+.social-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    line-height: 0.8;
+    gap: 16px;
+    align-items: center;
+    justify-items: start;
+    height: 64px;
+    padding: 15px 30px 15px 30px;
+    
+    background-color: $veryDarkGrayishBlue;
+
+        .text {
+            text-transform: uppercase;
+            color: $desaturatedDarkBlue;
+            letter-spacing: 5px;
+        }
+
+  
+
+    .icon-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    } 
+    
+    .icon {
+        justify-self: end;
+        background-color: $desaturatedDarkBlue;
+        border-radius: 100%;
+        padding: 10px;
+        
+        
+        #share {
+            fill: white;
+        }
+       
+}
+   
+}
+
+
