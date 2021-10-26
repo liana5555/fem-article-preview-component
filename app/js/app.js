@@ -1,6 +1,18 @@
-// targeting the button and the info and social container
+//This is only for the mobile version
+//So oit only includes the mobile functionality
+// I was still two minds about the desktop version and how to
+//achieve the final version. I had to google up how to 
+//make changes based on the changing of the window-size.
 
-const infoContainer = document.querySelector('.info-container');
+//Mobile functionality
+
+mobileFunc();
+
+
+
+
+function mobileFunc() {
+    const infoContainer = document.querySelector('.info-container');
 const socialContainer = document.querySelector('.social-container');
 const shares = document.querySelectorAll('.icon');
 
@@ -52,3 +64,27 @@ share.addEventListener('click' , function() {
 
 
 });
+}
+
+
+function desktopFunc() {
+    console.log('Desktop fucntion')
+}
+
+
+function setDefault () {
+    const infoContainer = document.querySelector('.info-container');
+    const socialContainer = document.querySelector('.social-container');
+
+    infoContainer.classList.remove('fade-in');
+    infoContainer.classList.remove('fade-out');
+    infoContainer.classList.remove('hidden');
+
+    socialContainer.classList.remove('fade-in');
+    socialContainer.classList.remove('fade-out');
+    socialContainer.classList.add('hidden');
+
+
+
+}
+

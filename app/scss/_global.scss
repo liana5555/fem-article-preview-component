@@ -25,6 +25,16 @@ main {
     text-align: left;
     overflow: hidden;
     padding: 0;
+
+    @include break-up ('large') {
+        display: flex;
+        flex-direction: row;
+        min-width: 330px;
+        max-width: 732px;
+        min-height: 282px;
+    }
+
+
     
 }
 
@@ -33,6 +43,10 @@ main {
     padding-right: 30px;
     padding-left: 30px;
 
+    @include break-up ('large') {
+        padding: 40px 40px 0px 40px;
+        margin-bottom: 20px;
+    }
     h2 {
         text-align: left;
         font-weight: 700;
@@ -40,6 +54,16 @@ main {
         color: $veryDarkGrayishBlue;
         line-height: 1.5;
         letter-spacing: 0.5px;
+        margin-top: 0px;
+        margin-bottom: 20px ;
+
+        @include break-up ('large') {
+            font-size: 20px;
+        }
+
+
+
+        
 
     }
     p{
@@ -47,6 +71,7 @@ main {
         line-height: 1.5;
         text-align: left;
         letter-spacing: 0.3px;
+        margin-top: 0px;
     }
 }
 
@@ -57,6 +82,11 @@ header {
     background-repeat: no-repeat;
     background-size: 101% 120%;
 
+    @include break-up ('large') {
+        min-width: 286px;
+        background-position-x: left;
+        background-size: 124% 100%;
+    }
 }
 
 /*
@@ -80,6 +110,9 @@ Info Container
     justify-items: start;
     height: 64px;
     padding: 0px 30px 15px 30px;
+   @include break-up ('large') {
+       margin-bottom: 20px;
+   }
     
     
 
@@ -94,6 +127,7 @@ Info Container
         background-color: $lightGrayishBlue;
         border-radius: 100%;
         padding: 10px;
+        cursor: pointer;
     }
   
 
@@ -121,7 +155,7 @@ Social Container
 
 
 .social-container {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     line-height: 0.8;
     gap: 16px;
@@ -132,10 +166,49 @@ Social Container
     
     background-color: $veryDarkGrayishBlue;
 
+    
+
+    @include break-up ('large') {
+        max-height: 56px;
+        max-width: 250px;
+        border-radius: 10px;
+        padding: 18px 40px 16px 40px;
+        position: absolute;
+        top: 50%;
+        left:69%;
+    }
+
+    @include break-up ('xlarge') {
+            top: 50%;
+            left: 62.5%;
+        }
+
+
+
+    &::after {
+        @include break-up ('large') {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            position: relative;
+            top:130%;
+            left: -566%;
+            background-color: $veryDarkGrayishBlue;
+            z-index: 2;
+        }
+    }
+
+  
+    
+
+
         .text {
             text-transform: uppercase;
             color: $desaturatedDarkBlue;
             letter-spacing: 5px;
+            margin: 0px;
         }
 
   
@@ -151,6 +224,7 @@ Social Container
         background-color: $desaturatedDarkBlue;
         border-radius: 100%;
         padding: 10px;
+        cursor: pointer;
         
         
         #share {
@@ -160,5 +234,6 @@ Social Container
 }
    
 }
+
 
 
