@@ -1,12 +1,13 @@
 // display classes
 .hidden {
-    display: none
+    display: none;
+    @include break-up ('large') {
+        display: grid;
+        visibility: hidden;
+        
+    }
 }
-/*
-.open {
-    display: block;
-}
-*/
+
 
 // animation appering
 

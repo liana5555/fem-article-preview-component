@@ -25,6 +25,7 @@ main {
     text-align: left;
     overflow: hidden;
     padding: 0;
+    transition: all 250ms ease-in-out;
 
     @include break-up ('large') {
         display: flex;
@@ -193,7 +194,7 @@ Social Container
             height: 20px;
             transform: rotate(45deg);
             position: relative;
-            top:130%;
+            top:126%;
             left: -566%;
             background-color: $veryDarkGrayishBlue;
             z-index: 2;

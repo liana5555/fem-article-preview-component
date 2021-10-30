@@ -88,6 +88,7 @@ removeitem.remove();
 const share = infoContainer.querySelector('.icon');
 
 setDefault();
+//positionSocialDesktop();
 
 share.removeEventListener('click', forMobileEvent);
 
@@ -202,3 +203,32 @@ function forDesktopEvent () {
    
 
 }
+
+
+/*
+ #######################################
+ For changing the position of the social contianer constantly
+ depending on the size of the window.
+ ##########################################
+*/
+/*
+function positionSocialDesktop () {
+
+const socialContainer = document.querySelector('.social-container');
+const content =  document.querySelector('.content');
+const sharebtn = content.querySelector('.icon');
+const rect = sharebtn.getBoundingClientRect();
+//const align = socialContainer.getBoundingClientRect();
+
+console.log(rect);
+const offset = 80;
+const final =  rect.top - offset;
+console.log(final);
+
+socialContainer.style.top = final + 'px';
+console.log(socialContainer.style.top);
+socialContainer.style.left = rect.left + 'px';
+  
+}
+
+*/
