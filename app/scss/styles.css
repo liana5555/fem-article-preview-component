@@ -144,6 +144,14 @@ Info Container
   border-radius: 100%;
 }
 
+.info-container .desktop-active-icon {
+  background-color: #6d7f97;
+}
+
+.info-container .desktop-active-icon #share-info {
+  fill: white;
+}
+
 .info-container .icon {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -158,14 +166,6 @@ Info Container
 }
 
 .info-container .icon:hover #share-info {
-  fill: white;
-}
-
-.info-container .desktop-active-icon {
-  background-color: #6d7f97;
-}
-
-.info-container .desktop-active-icon #share-info {
   fill: white;
 }
 
@@ -288,6 +288,28 @@ Social Container
 
 .social-container svg:hover #pinterest {
   fill: red;
+}
+
+/*
+#################################
+##############################
+attribution
+###############################
+################################
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #6d7f97;
 }
 
 .hidden {
