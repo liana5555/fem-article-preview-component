@@ -123,6 +123,13 @@ Info Container
         border-radius: 100%;
     }
 
+    .desktop-active-icon {
+        background-color: $desaturatedDarkBlue;
+    }
+    .desktop-active-icon #share-info {
+        fill: white;
+    }
+
     .icon {
         justify-self: end;
         background-color: $lightGrayishBlue;
@@ -130,6 +137,20 @@ Info Container
         padding: 10px;
         cursor: pointer;
     }
+
+
+    .icon:hover {
+        background-color: $desaturatedDarkBlue;
+    }
+    
+    .icon:hover #share-info {
+        
+        fill: white;
+    }
+
+   
+
+ 
   
 
 
@@ -231,7 +252,42 @@ Social Container
         #share {
             fill: white;
         }
+      
+
+
+
        
+}
+
+.icon:hover {
+    background-color: $lightGrayishBlue;
+}
+
+.icon:hover #share {
+    
+    fill: #6E8098;
+}
+
+
+
+
+
+svg  {
+    cursor: pointer;
+}
+svg:hover #facebook {
+    fill: darkblue;
+    
+}
+
+svg:hover #twitter {
+    fill: lightblue;
+    
+}
+
+svg:hover #pinterest {
+    fill:red;
+    
 }
    
 }

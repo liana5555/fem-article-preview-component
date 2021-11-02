@@ -153,6 +153,22 @@ Info Container
   cursor: pointer;
 }
 
+.info-container .icon:hover {
+  background-color: #6d7f97;
+}
+
+.info-container .icon:hover #share-info {
+  fill: white;
+}
+
+.info-container .desktop-active-icon {
+  background-color: #6d7f97;
+}
+
+.info-container .desktop-active-icon #share-info {
+  fill: white;
+}
+
 .info-container .text-container {
   font-weight: 500;
   color: #6d7f97;
@@ -248,6 +264,30 @@ Social Container
 
 .social-container .icon #share {
   fill: white;
+}
+
+.social-container .icon:hover {
+  background-color: #ecf2f8;
+}
+
+.social-container .icon:hover #share {
+  fill: #6E8098;
+}
+
+.social-container svg {
+  cursor: pointer;
+}
+
+.social-container svg:hover #facebook {
+  fill: darkblue;
+}
+
+.social-container svg:hover #twitter {
+  fill: lightblue;
+}
+
+.social-container svg:hover #pinterest {
+  fill: red;
 }
 
 .hidden {
