@@ -169,6 +169,14 @@ Info Container
   fill: white;
 }
 
+.info-container .desktop-active-icon {
+  background-color: #6d7f97;
+}
+
+.info-container .desktop-active-icon #share-info {
+  fill: white;
+}
+
 .info-container .text-container {
   font-weight: 500;
   color: #6d7f97;
