@@ -4,7 +4,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -27,7 +29,7 @@ body {
       align-content: center;
   min-height: 100vh;
   font-size: 13px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: #ecf2f8;
 }
 
@@ -40,6 +42,7 @@ main {
   padding: 0;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
@@ -54,6 +57,7 @@ main {
     min-width: 330px;
     max-width: 732px;
     min-height: 282px;
+    overflow: visible;
   }
 }
 
@@ -108,6 +112,7 @@ header {
     min-width: 286px;
     background-position-x: left;
     background-size: 124% 100%;
+    border-radius: 10px 0 0 10px;
   }
 }
 
@@ -219,14 +224,7 @@ Social Container
     padding: 18px 40px 16px 40px;
     position: absolute;
     top: 50%;
-    left: 69%;
-  }
-}
-
-@media (min-width: 1400px) {
-  .social-container {
-    top: 50%;
-    left: 62.5%;
+    right: -75px;
   }
 }
 
@@ -279,7 +277,7 @@ Social Container
 }
 
 .social-container .icon:hover #share {
-  fill: #6E8098;
+  fill: #6e8098;
 }
 
 .social-container svg {
